@@ -7,8 +7,17 @@
 
         <title>Laravel</title>
 
+        <!-- Bootstrap -->
+        <link rel="stylesheet" type="text/css"
+        href="{{ asset('css/bootstrap.css') }}">
+        <link rel="stylesheet" type="text/css"
+        href="{{ asset('css/bootstrap.min.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap-theme.min.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap-theme.css') }}">
+
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+        <
 
         <!-- Styles -->
         <style>
@@ -78,18 +87,12 @@
             @endif
 
             <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
+                <form>
+                    <input type="text" class="form-control" name="search_bar" placeholder="search">
+                    <button type="submit" class="btn btn-default-sm">Search</button>
+                </form>
             </div>
         </div>
+        <script type="text/javascript" src="{{ asset('js/bootstrap.js') }}"></script>
     </body>
 </html>
